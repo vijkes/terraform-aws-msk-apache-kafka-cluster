@@ -80,7 +80,7 @@ module "security_group" {
 
   enabled = local.enabled && var.create_security_group
 
-  vpc_id = var.vpc_id
+  vpc_id = "vpc-0307720ff4d919b6f"
 
   security_group_name           = var.security_group_name
   create_before_destroy         = var.security_group_create_before_destroy
