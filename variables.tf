@@ -26,7 +26,7 @@ variable "broker_per_zone" {
 
 variable "broker_volume_size" {
   type        = number
-  default     = 1000
+  default     = 10
   description = "The size in GiB of the EBS volume for the data drive on each broker node"
   nullable    = false
 }
@@ -243,7 +243,7 @@ variable "security_group_rule_description" {
 
 variable "public_access_enabled" {
   type        = bool
-  default     = false
+  default     = true
   description = "Enable public access to MSK cluster (given that all of the requirements are met)"
   nullable    = false
 }
